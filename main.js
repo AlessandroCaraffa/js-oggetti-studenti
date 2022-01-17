@@ -25,11 +25,35 @@ let arrayStudenti = [primoStudente , secondoStudente , terzoStudente];
 
 for (let i = 0; i < arrayStudenti.length ;i++){
 
-    for(let key in arrayStudenti[i]){
-        console.log(arrayStudenti[i][key])
-    }
+ 
 
-    //console.log(arrayStudenti[i].nome + " " + arrayStudenti[i].cognome  + " " + arrayStudenti[i].età )
+    console.log(arrayStudenti[i].nome + " " + arrayStudenti[i].cognome )
   
 };
+
+let nomeQuartoStudente = prompt("Inserisci il  nome dello studente");
+let cognomeQuartoStudente = prompt("Inserisci il  cognome dello studente");
+let etàQuartoStudente = prompt("Inserisci l'età dello studente");
+
+const quartoStudente = {
+    nome : nomeQuartoStudente,
+    cognome : cognomeQuartoStudente,
+    età : etàQuartoStudente
+};
+
+arrayStudenti.push({
+    nome : nomeQuartoStudente,
+    cognome : cognomeQuartoStudente,
+    età : etàQuartoStudente
+})
+
+for (let i = 0; i < arrayStudenti.length ;i++){
+    for(let key in arrayStudenti[i]){
+        console.log(arrayStudenti[i][key])
+    };
+}
+
+   // for(let key in arrayStudenti[i]){
+    //     console.log(arrayStudenti[i][key])
+    // };
 //console.log(primoStudente.nome);
